@@ -1,0 +1,34 @@
+# global
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# Env (nie wrzucamy prawdziwych haseł)
+.env
+.env.*        # ale patrz niżej na .env.example
+!*.example
+
+# Front (Next.js)
+User/sklep/.next/
+User/sklep/.turbo/
+User/sklep/.vercel/
+User/sklep/out/
+User/sklep/.cache/
+
+# Backend (Prisma/TypeScript)
+server/dist/
+server/node_modules/
+server/prisma/dev.db
+server/prisma/dev.db-journal
+server/.turbo/
+
+# IDE
+.vscode/
+.idea/
